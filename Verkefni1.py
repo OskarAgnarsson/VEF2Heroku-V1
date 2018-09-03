@@ -1,6 +1,8 @@
 from sys import argv
 
+import bottle
 from bottle import *
+bottle.debug(True)
 
 @route("/")
 
@@ -24,4 +26,4 @@ def stuff():
 def stuff():
     return "<h2>Hérna er enn meira stuff</h2>"
 
-run(host="localhost", port=argv[1], debug=True)
+bottle.run(host="0.0.0.0", port=argv[1])
