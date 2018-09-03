@@ -24,4 +24,4 @@ def stuff():
 def stuff():
     return "<h2>Hérna er enn meira stuff</h2>"
 
-run(host="localhost", port=8080, debug=True)
+run(host="localhost", port=argv[1], debug=True)
